@@ -1,4 +1,4 @@
-FROM weyforth/nodejs-node
+FROM weyforth/nodejs-node:1.0
 
 MAINTAINER "Mike Farrow" <contact@mikefarrow.co.uk>
 
