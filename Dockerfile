@@ -8,6 +8,7 @@ WORKDIR /tmp
 
 RUN apt-get update -y && \
     apt-get install -y curl git && \
+    apt-get install -y netcat-traditional && \
     curl -sL https://deb.nodesource.com/setup | bash -  && \
     apt-get install -y nodejs make && \
     apt-get remove --purge curl -y && \
