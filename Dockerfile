@@ -13,9 +13,7 @@ RUN apt-get update -y && \
     apt-get remove --purge curl -y && \
     apt-get clean
 
-RUN npm config set registry http://registry.npmjs.org/ && \
-    npm install -g --no-optional bower@1.4.1 && \
-    npm install -g --no-optional gulp@3.8.11
+RUN npm config set registry http://registry.npmjs.org/
 
 ENV BUNDLE_JOBS=2 \
     BUNDLE_PATH=/bundle
